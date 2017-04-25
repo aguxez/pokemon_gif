@@ -6,7 +6,7 @@
 
 ```elixir
 def deps do
-  [{:pokemon_gif, "~> 1.0.0"}]
+  [{:pokemon_gif, "~> 1.0"}]
 end
 ```
 
