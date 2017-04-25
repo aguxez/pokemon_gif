@@ -13,7 +13,7 @@ defmodule PokemonGif do
     if member?(organize_list(@pokemon), clean_name(name)) do
       "#{@base_url}#{name |> clean_name() |> String.downcase()}.gif"
     else
-      "Pokemon identifier must be an integer or a valid Pokemon name as string"
+      raise ArgumentError, message: "Pokemon identifier must be an integer or a valid Pokemon name as string"
     end
   end
 
