@@ -8,8 +8,9 @@ defmodule PokemonGif.Mixfile do
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps(),
-     description: description()
-     source_url: "https://github.com/aguxez/pokex_gif"]
+     description: description(),
+     package: package(),
+     source_url: "https://github.com/aguxez/pokemonGif"]
   end
 
   # Configuration for the OTP application
@@ -28,5 +29,14 @@ defmodule PokemonGif.Mixfile do
     """
     Elixir package to get Pokemon's gif out of an ID or name.
     """
+  end
+
+  defp package do
+    [
+      files: ["lib", "mix.exs", "README.md"],
+      maintainers: ["Miguel Diaz"],
+      licenses: ["Apache 2.0"],
+      links: %{github: "https://github.com/aguxez/pokemonGif"}
+    ]
   end
 end
