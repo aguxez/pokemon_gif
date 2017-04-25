@@ -2,15 +2,15 @@ defmodule PokemonGif.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :pokemonGif,
-     version: "1.0.0",
+    [app: :pokemon_gif,
+     version: "1.0.1",
      elixir: "~> 1.4",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps(),
      description: description(),
      package: package(),
-     source_url: "https://github.com/aguxez/pokemonGif"]
+     source_url: "https://github.com/aguxez/pokemon_gif"]
   end
 
   # Configuration for the OTP application
@@ -37,7 +37,7 @@ defmodule PokemonGif.Mixfile do
       files: ["lib", "mix.exs", "README.md"],
       maintainers: ["Miguel Diaz"],
       licenses: ["Apache 2.0"],
-      links: %{Github: "https://github.com/aguxez/pokemonGif"}
+      links: %{Github: "https://github.com/aguxez/pokemon_gif"}
     ]
   end
 end

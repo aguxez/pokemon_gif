@@ -10,12 +10,12 @@ defmodule PokemonGif do
     |> String.replace(~r/\./, "")
     |> String.replace(~r/'/, "")
     |> String.replace(~r/\s/, "-")
-    "#{@base_url}#{String.downcase(poke_name)}"
+    "#{@base_url}#{String.downcase(poke_name)}.gif"
   end
 
   def get_gif(name) when is_bitstring(name) do
     if member?(@pokemon, String.capitalize(name)) do
-      "#{@base_url}#{String.downcase(name)}"
+      "#{@base_url}#{String.downcase(name)}.gif"
     else
       "Pokemon identifier must be an integer or a valid Pokemon name as string"
     end
