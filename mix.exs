@@ -22,7 +22,7 @@ defmodule PokemonGif.Mixfile do
   end
 
   defp deps do
-    []
+    [{:ex_doc, ">= 0.0.0", only: :dev}]
   end
 
   defp description do
@@ -33,10 +33,11 @@ defmodule PokemonGif.Mixfile do
 
   defp package do
     [
+      name: :pokemon_gif,
       files: ["lib", "mix.exs", "README.md"],
       maintainers: ["Miguel Diaz"],
       licenses: ["Apache 2.0"],
-      links: %{github: "https://github.com/aguxez/pokemonGif"}
+      links: %{Github: "https://github.com/aguxez/pokemonGif"}
     ]
   end
 end

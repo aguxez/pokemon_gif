@@ -1,4 +1,4 @@
-# PokemonGif
+# Pokemon Gif
 
 ### Get Pokemon gifs out of name or id
 
@@ -6,7 +6,7 @@
 
 ```elixir
 def deps do
-  [{:pokemonGif, "~> 1.0.0"}]
+  [{:pokemon_gif, "~> 1.0.0"}]
 end
 ```
 
@@ -14,7 +14,7 @@ And then in your `mix.exs`
 
 ```elixir
 def application do
-  [extra_applications: [:pokemonGif]]
+  [extra_applications: [:pokemon_gif]]
 end
 ```
 
