@@ -26,3 +26,5 @@ end
   iex> PokemonGif.get_gif("pikachu")
   # "http://www.pokestadium.com/sprites/xy/pikachu"
 ```
+
+## Names are only covered to Volcanion [id: 721]
